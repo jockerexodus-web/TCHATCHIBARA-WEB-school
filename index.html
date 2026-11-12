@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCHATCHIBARA-WEB School</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icônes FontAwesome pour le logo et le menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- EN-TÊTE -->
+    <header>
+        <div class="top-bar">
+            <div class="logo-container">
+                <i class="fas fa-graduation-cap logo-icon"></i>
+                <h1>TCHATCHIBARA-<br>WEB</h1>
+            </div>
+            <button class="school-btn">School</button>
+        </div>
+
+        <!-- MENU DE NAVIGATION -->
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="#courses">Cours</a></li>
+                <li><a href="#">Informatique</a></li>
+                <li><a href="#">Baccalauréat</a></li>
+                <li><a href="#">Exercices</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECTION HERO (BIENVENUE) -->
+    <section class="hero">
+        <h2>Bienvenue sur</h2>
+        <h1 class="main-title">TCHATCHIBARA-WEB<br>School</h1>
+        
+        <p class="description">
+            Plateforme éducative conforme au programme officiel du Gabon. 
+            Cours, exercices corrigés, devoirs du Bac et explications détaillées.
+            <br>
+            <span class="credit">Informatique by SAKAMOTO Dev.</span>
+        </p>
+
+        <a href="#courses" class="cta-button">Voir les cours <i class="fas fa-arrow-right"></i></a>
+    </section>
+
+    <!-- SECTION COURS (Générée par JS) -->
+    <section id="courses" class="courses-section">
+        <h2 class="section-title">Programme du Gabon</h2>
+        
+        <!-- Filtres (Boutons) -->
+        <div class="filters">
+            <button onclick="filterCourses('seconde')" class="filter-btn">2nde</button>
+            <button onclick="filterCourses('premiere')" class="filter-btn">1ère</button>
+            <button onclick="filterCourses('terminale')" class="filter-btn">Terminale</button>
+            <button onclick="filterCourses('bac')" class="filter-btn bac">Épreuves Bac</button>
+        </div>
+
+        <!-- Liste des matières -->
+        <div id="course-list" class="course-grid">
+            <!-- Le contenu sera injecté par JavaScript -->
+        </div>
+    </section>
+
+    <!-- PIED DE PAGE (CONTACTS) -->
+    <footer>
+        <div class="contact-info">
+            <p><strong>Tchatchibara Tech x Collab Waze Studio</strong></p>
+            <p><i class="fab fa-telegram"></i> @meilleur_dev</p>
+            <div class="phones">
+                <p><i class="fab fa-whatsapp"></i> +241 02738680</p>
+                <p><i class="fab fa-whatsapp"></i> +241 02955090</p>
+            </div>
+            <p class="copyright">&copy; 2024 TCHATCHIBARA-WEB School. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
