@@ -1,0 +1,236 @@
+/* RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1e3a6e; /* Bleu foncé du fond */
+    color: white;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: #1e3a6e;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    font-size: 2rem;
+    color: #f59e0b; /* Orange/Or */
+}
+
+header h1 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: white;
+}
+
+.school-btn {
+    background-color: #f59e0b;
+    color: #1e3a6e;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* NAVIGATION */
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    display: block;
+    padding: 5px;
+}
+
+nav ul li a.active {
+    color: #f59e0b;
+    border-bottom: 2px solid #f59e0b;
+    display: inline-block;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(180deg, #1e3a6e 0%, #2a4a85 100%);
+}
+
+.hero h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.main-title {
+    font-size: 1.8rem;
+    color: #f59e0b;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.description {
+    font-size: 0.95rem;
+    color: #d1d5db;
+    margin-bottom: 30px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.credit {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 5px;
+    display: block;
+}
+
+/* BOUTON CTA */
+.cta-button {
+    background-color: #f59e0b;
+    color: #1e3a6e;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+    transition: transform 0.2s;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+/* SECTION COURS */
+.courses-section {
+    padding: 20px;
+    background-color: #1e3a6e;
+}
+
+.section-title {
+    text-align: center;
+    color: #f59e0b;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid #f59e0b;
+    color: #f59e0b;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: #f59e0b;
+    color: #1e3a6e;
+}
+
+.bac {
+    border-color: #ef4444;
+    color: #ef4444;
+}
+
+.bac:hover {
+    background: #ef4444;
+    color: white;
+}
+
+/* GRILLE DE CARTES */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+}
+
+.course-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border-left: 4px solid #f59e0b;
+}
+
+.course-card h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.course-card p {
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+/* FOOTER */
+footer {
+    background-color: #152a52;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 2px solid #f59e0b;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.phones {
+    margin: 10px 0;
+    color: #25D366; /* Couleur WhatsApp */
+    font-weight: bold;
+}
+
+.copyright {
+    font-size: 0.7rem;
+    color: #666;
+    margin-top: 15px;
+}
